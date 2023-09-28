@@ -11,4 +11,4 @@ def corin (D,a,b) :
 
 a,b,c=input('Введіть a b та c ').split()
 print('Дискримінант дорівнює ',disc(a,b,c))
-print('Корені рівнняння є ',corin(disc(a,b,c)))
+print('Корені рівнняння є ',corin(disc(a,b,c),a,b))
