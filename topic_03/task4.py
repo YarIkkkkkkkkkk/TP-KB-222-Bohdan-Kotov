@@ -6,6 +6,7 @@ while True:
     for i in sp:
         if int(a)>sp[len(sp)-1]:
             sp.append(int(a))
+            break
         elif int(a)<=i:
             sp.insert(sp.index(i),int(a))
             break
