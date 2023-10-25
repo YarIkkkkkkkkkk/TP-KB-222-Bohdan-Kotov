@@ -1,0 +1,5 @@
+numbers: a = 5, b = 3; operation = +; result = 8
+numbers: a = 18, b = 26; operation = *; result = 468
+numbers: a = 66, b = 58; operation = -; result = 8
+numbers: a = 62626, b = 5151; operation = /; result = 12.158027567462629
+numbers: a = 152, b = 0; operation = /; result = Ділення на нуль
