@@ -1,3 +1,3 @@
-Дія: Додавання, Дані: 15 + 15, Результат: 30
-Дія: Додавання, Дані: 15 + 15, Результат: 30
-Дія: Додавання, Дані: 16 + 0, Результат: 16
+Addition: operand1=15.0, operand2=15.0, result=30.0
+Division: operand1=15.0, operand2=0.0, result=Error: Division by zero
+Addition: operand1=15.0, operand2=15.0, result=30.0
