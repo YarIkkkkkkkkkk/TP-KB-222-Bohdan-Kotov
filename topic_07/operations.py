@@ -1,11 +1,9 @@
 from functions import *
 class Operations():
     def get_numbers(self):
-        a = int(input("Введіть перше число: "))
-        b = int(input("Введіть друге число: "))
-        return a, b
-    def __init__(self):
-        self.log_file_name="topic_07\log.txt"
+        self.a = int(input("Введіть перше число: "))
+        self.b = int(input("Введіть друге число: "))
+        return self.a, self.b
     def log(self, action, data, result):
         with open(self.log_file_name, "a") as log_file:
             log_entry = f"Дія: {action}, Дані: {data}, Результат: {result}\n"
