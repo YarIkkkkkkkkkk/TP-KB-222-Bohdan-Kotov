@@ -1,16 +1,7 @@
-import os
 from operations import Operations
 
-class Calculator(Operations):
-    def __init__(self):
-        super().__init__()
-        self.log_file_name = "log.txt"
-        self.current_directory = os.path.dirname(os.path.abspath(__file__))
-        self.log_file_path = os.path.join(self.current_directory, self.log_file_name)
 
-        if not os.path.isfile(self.log_file_path):
-            with open(self.log_file_path, "w") as log_file:
-                log_file.write("Calculator Log:\n")
+class Calculator(Operations):
 
     def run(self):
         c=0
@@ -18,13 +9,13 @@ class Calculator(Operations):
             choice = input("Введіть операцію: ")
 
             if choice == "+":
-                self.plus_log(self.log_file_path)
+                self.plus_log()
             elif choice == "-":
-                self.minus_log(self.log_file_path)
+                self.minus_log()
             elif choice == "*":
-                self.mnoj_log(self.log_file_path)
+                self.mnoj_log()
             elif choice == "/":
-                self.dil_log(self.log_file_path)
+                self.dil_log()
             elif choice == 'q':
                 c=5
             
