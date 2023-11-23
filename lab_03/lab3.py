@@ -71,6 +71,7 @@ def updateElement(list):
             updated_item = Student(new_name,new_phone,new_gender,new_country)
             del list[index]
             insertPosition = 0
+            b=0
             for pos, elem in enumerate(list):
                 if new_name > elem.name:
                     insertPosition = pos + 1
@@ -78,8 +79,10 @@ def updateElement(list):
                     break
             list.insert(insertPosition, updated_item)
             print("Element has been updated")
+            b=1
             break
-    print("Element not found")
+    if b==0:
+        print("Element not found")
 
 
 def main():
